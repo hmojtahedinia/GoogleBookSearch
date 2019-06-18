@@ -1,0 +1,93 @@
+#title1 {
+  text-align: center;
+  text-shadow: 3px;
+  text-decoration: none;
+  font-size: 3em;
+  letter-spacing: 20px;
+  text-shadow: 3px 2px rgba(71, 69, 69, 0.733);
+  color: black;
+  font-family: "Playfair Display SC";
+}
+
+.btn {
+  background-color: rgba(0, 158, 13, 0.185);
+  color: black;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  font-family: "Playfair Display SC";
+}
+
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: "";
+  position: absolute;
+  border: rgba(0, 158, 13, 0.185) solid 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before,
+.hvr-ripple-out:focus:before,
+.hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+
+#navbarNav {
+  background-image: url("../../googleBook.jpg");
+
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: right;
+
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
+  border: solid black 3px;
+  size: 20%;
+}
+.navbar-nav {
+  list-style: none;
+}
+li {
+  /* display: inline; */
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
+li :hover {
+  color: rgba(0, 71, 6, 0.788);
+}

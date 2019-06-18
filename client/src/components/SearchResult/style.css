@@ -1,0 +1,39 @@
+.card {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.432);
+}
+
+.search-list {
+  border-radius: 15px;
+  background-color: rgba(100, 207, 58, 0.185);
+  margin: 10px;
+  padding: 10px;
+}
+
+.saveBook {
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.viewBook {
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+h3 {
+  font-family: "Syncopate";
+}
+
+.bookDescription {
+  text-align: justify;
+  color: rgb(2, 36, 1);
+  padding: 5px;
+}
+
+.bookAuthor {
+  text-align: justify;
+  color: rgb(1, 20, 1);
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}

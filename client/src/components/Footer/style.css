@@ -1,0 +1,12 @@
+footer {
+  color: rgb(53, 0, 0);
+  font-family: serif;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 1em;
+
+  padding: 5px;
+  border-radius: 10px;
+  /* background-color: rgba(134, 134, 134, 0.25); */
+  text-align: center;
+}

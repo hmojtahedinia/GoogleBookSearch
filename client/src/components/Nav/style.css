@@ -67,27 +67,26 @@
 }
 
 #navbarNav {
-  background-image: url("../../googleBook.jpg");
-
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: right;
-
+  /* background-image: url("../../googleBook.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-attachment:; */
+  /* background-position: right; */
+  background-color: rgba(240, 255, 255, 0.75);
   text-align: center;
-  margin: 2%;
-  padding: 1%;
+  /* margin: 2%;
+  padding: 1%; */
   border: solid black 3px;
-  size: 20%;
+  size: 10%;
 }
 .navbar-nav {
   list-style: none;
+}
+.nav-item {
+  display: inline-block;
 }
 li {
   /* display: inline; */
   text-align: center;
   text-decoration: none;
   margin: auto;
-}
-li :hover {
-  color: rgba(0, 71, 6, 0.788);
 }

@@ -16,43 +16,49 @@ const SearchResult = props => {
       <div className="card-body player">
         <div className="article">
           <h3>Search Results</h3>
-          {props.books.map(book => {
+          {props.books.map((searchBook, book) => {
             return (
-              <li className="search-list list-group-item">
+              <li className="search-list list-group-item" key={book}>
                 <Row
                   className="SearchResult row"
-                  id={book.title + "Card"}
-                  key={book._id}
+                  id={searchBook.title + "Card"}
+                  key={searchBook._id}
                 >
                   {/* col-3 show image of the book */}
                   <Col size="2" className="bookImage">
-                    <img src={book.image} alt={book.title} />
+                    <img src={searchBook.image} alt={searchBook.title} />
                   </Col>
                   <Col size="1" className="emptyCol" />
                   {/* col-9 show information of the book */}
                   <Col size="9" className="bookInfo">
                     <Row>
-                      <h3 className="bookTitle">{book.title}</h3>
+                      <h3 className="bookTitle">{searchBook.title}</h3>
                     </Row>
                     <Row>
-                      <h4 className="bookAuthor">{book.author}</h4>
+                      <h4 className="bookAuthor">{searchBook.author}</h4>
                     </Row>
                     <Row>
-                      <p className="bookDescription">{book.description}</p>
+                      <p className="bookDescription">
+                        {searchBook.description}
+                      </p>
                     </Row>
                   </Col>
                 </Row>
                 <br />
                 <Row className="buttonDiv ">
                   <button
-                    className="saveBook btn btn-primary"
-                    id={book.id}
+                    className="saveBook btn btn-primary hvr-ripple-out"
+                    id={searchBook.id}
                     onClick={event => props.handleSavedButton(event)}
                   >
                     Save Book
                   </button>
-                  <a href={book.link} target="_blank">
-                    <button className="viewBook btn btn-success">
+                  <a
+                    href={searchBook.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="viewBook btn btn-success hvr-ripple-out">
                       View Book
                     </button>
                   </a>

@@ -5,7 +5,9 @@
 
 .saved-list {
   border-radius: 15px;
-  background-color: lightyellow;
+  background-color: rgb(243, 243, 201, 0.75);
+  margin: 20px;
+  padding: 10px;
 }
 
 .deleteBook {

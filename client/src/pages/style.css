@@ -1,5 +1,11 @@
+body {
+  background-image: url("https://johnmurraybyron.files.wordpress.com/2016/12/free-shipping-3d-custom-large-wall-font-b-painting-b-font-magic-font-b-bookshelf-b.jpg");
+  background-attachment: fixed;
+}
+
 #title02 {
   font-family: "Playfair";
   margin: 20px;
   padding: 5%;
+  color: white;
 }

@@ -1,12 +1,12 @@
 form {
-  background: rgba(153, 210, 229, 0.425);
+  background: rgba(153, 210, 229, 0.75);
   border-radius: 15px;
   padding: 10px;
   margin: 1%;
   size: 50%;
 }
 .form-control {
-  background: rgba(153, 210, 229, 0.616);
+  background: rgba(153, 210, 229, 0.75);
   border-radius: 15px;
   padding: 10px;
   margin: 10px;

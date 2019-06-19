@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import axios from "axios";
 import Jumbotron from "../components/Jumbotron";
 import { Container, Row, Col } from "../components/Grid";
 import SearchForm from "../components/SearchForm";
 import SearchResult from "../components/SearchResult";
 import "./style.css";
+
+import axios from 'axios'
 
 class SearchBooks extends Component {
   //create state
@@ -13,15 +14,8 @@ class SearchBooks extends Component {
     search: "",
     books: [],
     error: "",
-    message: ""
+    savedBookToDB: false
   };
-
-  componentDidMount() {
-    axios
-      .get("http://localhost:3001/api/books")
-      .then(data => console.log(data))
-      .catch(err => console.error(err));
-  }
 
   //function to take value of what enter in the search bar
   handleInputChange = event => {
@@ -63,18 +57,19 @@ class SearchBooks extends Component {
   handleSavedButton = event => {
     // console.log(event)
     event.preventDefault();
-    console.log(this.state.books);
+    // console.log(this.state.books);
     let savedBooks = this.state.books.filter(
       book => book.id === event.target.id
-    );
-    savedBooks = savedBooks[0];
+    )[0];
+    console.log(savedBooks)
     API.saveBook(savedBooks)
-      .then(this.setState({ message: alert("Your book is saved") }))
+      .then(this.setState({ savedBookToDB: true }))
       .catch(err => console.log(err));
   };
   render() {
     return (
       <Container fluid>
+      {/* { this.state.savedBookToDB ? "jhsgkjhrg" : ",mshfkegshf"} */}
         <Jumbotron>
           <h1 id="title02" className="text-white">
             Find Your Favorite Books with GoogleBook API

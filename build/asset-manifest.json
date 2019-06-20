@@ -1,0 +1,13 @@
+{
+  "main.css": "/GoogleBookSearch/static/css/main.e37b8078.chunk.css",
+  "main.js": "/GoogleBookSearch/static/js/main.ca5b8e18.chunk.js",
+  "main.js.map": "/GoogleBookSearch/static/js/main.ca5b8e18.chunk.js.map",
+  "runtime~main.js": "/GoogleBookSearch/static/js/runtime~main.dfee3e5a.js",
+  "runtime~main.js.map": "/GoogleBookSearch/static/js/runtime~main.dfee3e5a.js.map",
+  "static/js/2.dd2871f0.chunk.js": "/GoogleBookSearch/static/js/2.dd2871f0.chunk.js",
+  "static/js/2.dd2871f0.chunk.js.map": "/GoogleBookSearch/static/js/2.dd2871f0.chunk.js.map",
+  "index.html": "/GoogleBookSearch/index.html",
+  "precache-manifest.9737bf03fa748933005d582fc7cd3c10.js": "/GoogleBookSearch/precache-manifest.9737bf03fa748933005d582fc7cd3c10.js",
+  "service-worker.js": "/GoogleBookSearch/service-worker.js",
+  "static/css/main.e37b8078.chunk.css.map": "/GoogleBookSearch/static/css/main.e37b8078.chunk.css.map"
+}

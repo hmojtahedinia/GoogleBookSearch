@@ -4,7 +4,7 @@
   text-decoration: none;
   font-size: 3em;
   letter-spacing: 20px;
-  text-shadow: 3px 2px rgba(71, 69, 69, 0.733);
+  text-shadow: 3px 2px rgba(71, 69, 69, 0.75);
   color: black;
   font-family: "Playfair Display SC";
 }
@@ -89,4 +89,8 @@ li {
   text-align: center;
   text-decoration: none;
   margin: auto;
+}
+
+.errormessage {
+  color: white;
 }
